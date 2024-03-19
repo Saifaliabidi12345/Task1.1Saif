@@ -1,0 +1,47 @@
+const int ledPin = LED_BUILTIN;
+// blink pattern for my name saif
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  blinkDot();  
+  delay(100);  
+  blinkDot();  
+  delay(100);  
+  blinkDot();  
+  delay(300);  
+
+  blinkDot();  
+  delay(100);  
+  blinkDash(); 
+  delay(300);  
+
+  blinkDot();  
+  delay(300);  
+
+  blinkDot();  
+  delay(100);  
+  blinkDot();  
+  delay(100);  
+  blinkDash(); 
+  delay(100);  
+  blinkDot();  
+  delay(300);  
+  
+  delay(1000); 
+}
+
+void blinkDot() {
+  digitalWrite(ledPin, HIGH); 
+  delay(200);                  
+  digitalWrite(ledPin, LOW);  
+  delay(100);                  
+}
+
+void blinkDash() {
+  digitalWrite(ledPin, HIGH); 
+  delay(600);                  
+  digitalWrite(ledPin, LOW);  
+  delay(100);                  
+}
